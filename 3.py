@@ -3,10 +3,13 @@
 
 paragraph = "He listen silent cat act people eye dog god use sue "
 
-lst = paragraph.split()
+anagrams = []
+lst = paragraph.lower().split()
 
-for i in range(len(lst)):
-    for j in range(i,len(lst)):
-        if sorted(lst[i]) == sorted(lst[j]):
-            print(lst[i])
-    
+
+for i in lst:
+    for j in lst:
+        if sorted(i) == sorted(j) and i !=j:
+            anagrams.append(i)
+
+print(anagrams)

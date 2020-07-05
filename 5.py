@@ -1,6 +1,13 @@
-# 5. Create a tuple with your first name, last name, and age. Create a list, people, and append your tuple to it. Make more tuples with the corresponding information from your friends and append them to the list. Sort the list. When you learn about sort method, you can use the key parameter to sort by any field in the tuple, first name, last name, or age.
+# 5. Create a tuple with your first name, last name, and age. Create a list, people, and append your tuple to it.
+#  Make more tuples with the corresponding information from your friends and append them to the list. Sort the list.
+#  When you learn about sort method, you can use the key parameter to sort by any field in the tuple, first name, last name, or age.
 
-name= ("firstName","lastName","age")
+def sort_tuple(people):
+
+    people.sort(key=lambda name: name[2])
+    return people
+
+name= ("sujana","sth",20)
 people = []
 people.append(name)
 
@@ -14,7 +21,10 @@ people.append(name2)
 people.append(name3)
 people.append(name4)
 
-print(people)
+# print(people)
 
-print(sorted(people,key:age)) 
+print(sort_tuple(people))
+
+
+
 
