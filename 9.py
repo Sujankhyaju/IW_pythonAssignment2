@@ -11,5 +11,6 @@ def binary_search(sequence,key):
         return -1
 
 sequence=input("Enter a string::")
+sequence = sequence.split()
 key = input("Enter a key to search::")
 print("search found!!") if (binary_search(sorted(sequence),key) !=-1) else print("search not found")
