@@ -11,6 +11,8 @@ def writeCSV(filename,data):
         file_write.writerow(title)     
         for i in data:            
             file_write.writerow(i)
+
+    print("Successfully written!!")
     
     read_csv.close()
 
